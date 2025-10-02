@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vie    <!-- Problem Statements Section -->
+    <main class="problems-container">
+        <!-- Floating Tech Icons Background -->
+        <div class="floating-icons">
+            <div class="tech-icon" style="--delay: 0s; --duration: 20s; --x: 10%; --y: 20%;">⚛️</div>
+            <div class="tech-icon" style="--delay: 2s; --duration: 25s; --x: 80%; --y: 15%;">🦋</div>
+            <div class="tech-icon" style="--delay: 4s; --duration: 22s; --x: 20%; --y: 60%;">🐍</div>
+            <div class="tech-icon" style="--delay: 1s; --duration: 24s; --x: 75%; --y: 70%;">📱</div>
+            <div class="tech-icon" style="--delay: 3s; --duration: 26s; --x: 15%; --y: 85%;">🗄️</div>
+            <div class="tech-icon" style="--delay: 5s; --duration: 23s; --x: 85%; --y: 40%;">💻</div>
+            <div class="tech-icon" style="--delay: 2.5s; --duration: 21s; --x: 50%; --y: 25%;">🌐</div>
+            <div class="tech-icon" style="--delay: 4.5s; --duration: 27s; --x: 40%; --y: 75%;">🤖</div>
+            <div class="tech-icon" style="--delay: 1.5s; --duration: 24s; --x: 90%; --y: 55%;">☁️</div>
+            <div class="tech-icon" style="--delay: 3.5s; --duration: 25s; --x: 30%; --y: 45%;">🔥</div>
+        </div>
+        
+        <div class="section-header">
+            <span class="section-badge">🚀 CHALLENGES</span>
+            <h2 class="section-title">
+                <span class="reveal-text">Problem</span>
+                <span class="reveal-text gradient-text">Statements</span>
+            </h2>
+            <p class="section-description">Select a challenge that excites you and start building!</p>
+            <div class="section-divider"></div>
+        </div>ent="width=device-width, initial-scale=1.0">
+    <title>12-Hour Hackathon - Problem Statements</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Floating Orbs -->
+    <div class="floating-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge-container">
+                <span class="live-badge">🔴 LIVE NOW</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line" data-text="12-HOUR">12-HOUR</span>
+                <span class="title-line gradient-text" data-text="HACKATHON">HACKATHON</span>
+            </h1>
+            <p class="subtitle">
+                <span class="subtitle-highlight">Choose Your Challenge.</span>
+                <span>Build Your Solution.</span>
+                <span class="subtitle-highlight">Shape the Future.</span>
+            </p>
+            
+            <!-- Enhanced Timer -->
+            <div class="timer-container">
+                <div class="timer-label">TIME REMAINING</div>
+                <div class="timer" id="timer">
+                    <div class="time-block">
+                        <div class="time-inner">
+                            <span class="time" id="hours">12</span>
+                        </div>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-block">
+                        <div class="time-inner">
+                            <span class="time" id="minutes">00</span>
+                        </div>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-block">
+                        <div class="time-inner">
+                            <span class="time" id="seconds">00</span>
+                        </div>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+                <div class="timer-progress">
+                    <div class="timer-progress-bar" id="timerProgress"></div>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Challenges</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Hours</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number infinity">∞</div>
+                    <div class="stat-label">Possibilities</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problem Statements Section -->
+    <main class="problems-container">
+        <div class="section-header">
+            <div class="section-badge">CHALLENGES</div>
+            <h2 class="section-title">
+                <span class="reveal-text">Problem</span>
+                <span class="reveal-text gradient-text">Statements</span>
+            </h2>
+            <p class="section-description">Select a challenge that excites you and start building!</p>
+            <div class="section-divider"></div>
+        </div>
+
+        <!-- Problem 1: Green Lifestyle & Finance Tracker -->
+        <div class="problem-card" data-problem="1">
+            <div class="card-glow"></div>
+            <div class="card-shine"></div>
+            <div class="problem-number">01</div>
+            <div class="problem-content">
+                <div class="problem-header">
+                    <div class="problem-icon">🌱</div>
+                    <div class="problem-title-wrapper">
+                        <h3>Green Lifestyle & Finance Tracker</h3>
+                        <div class="difficulty-container">
+                            <span class="difficulty easy">
+                                <span class="difficulty-icon">⭐</span>
+                                Beginner Friendly
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="tagline">Sustainability Made Simple</p>
+                    <div class="section">
+                        <h4>📋 Background</h4>
+                        <p>Many people genuinely want to live eco-friendly but don't know where to start. Daily choices like travel, food, shopping, and energy use quietly add up to a huge carbon footprint. At the same time, people also worry about money — but they often think living sustainably is expensive. What they need is a tool that shows both environmental impact and financial savings, making eco-friendly living practical and motivating.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>🎯 Mission</h4>
+                        <p>Create a tool that shows both environmental impact and financial savings, making eco-friendly living practical and motivating.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>💡 Vision</h4>
+                        <p><strong>Imagine an app that feels like your green & finance buddy:</strong></p>
+                        <ul>
+                            <li>Calculates your daily/weekly carbon footprint + money spent. Shows fun, engaging visualizations (like "You saved 2 trees 🌳 and ₹500 💰 this week").</li>
+                            <li>Suggests eco-friendly swaps (e.g., public transport → saves fuel & money, reusable bottle → cuts cost of plastic).</li>
+                            <li>Tracks your progress and celebrates wins with rewards, badges, or savings goals.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h4>🚀 Goal</h4>
+                        <p><strong>Prototype an app that:</strong></p>
+                        <ul>
+                            <li>Takes mock input (travel mode, meals, purchases, energy bills).</li>
+                            <li>Calculates a simple eco-score (carbon footprint) + finance score (spending/savings).</li>
+                            <li>Suggests eco-friendly, cost-saving alternatives for each choice.</li>
+                            <li>Displays it all in a fun, gamified UI that motivates lifestyle change.</li>
+                        </ul>
+                    </div>
+
+                <div class="tech-stack">
+                    <h4>💻 Suggested Tech Stack</h4>
+                    <div class="tags">
+                        <span class="tag">React / Flutter</span>
+                        <span class="tag">Chart.js</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Carbon APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problem 2: Placement Progress Tracker -->
+        <div class="problem-card" data-problem="2">
+            <div class="card-glow"></div>
+            <div class="card-shine"></div>
+            <div class="problem-number">02</div>
+            <div class="problem-content">
+                <div class="problem-header">
+                    <div class="problem-icon">📊</div>
+                    <div class="problem-title-wrapper">
+                        <h3>Placement Progress Tracker</h3>
+                        <div class="difficulty-container">
+                            <span class="difficulty medium">
+                                <span class="difficulty-icon">⭐⭐</span>
+                                Intermediate
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="tagline">Continuous Assessment Over Snapshots</p>
+                    <div class="section">
+                        <h4>📋 Background</h4>
+                        <p>Campus placements usually depend on a single exam or interview. But is one day enough to judge someone's skills, consistency, and growth? Many capable students miss opportunities because they had a bad day.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>🎯 Mission</h4>
+                        <p>Build an application that continuously tracks and evaluates students' progress (projects, coding practice, learning curve, achievements) instead of relying only on a single test.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>💡 Vision</h4>
+                        <p>A system where students' growth is measured over months, not minutes. Recruiters get a holistic profile of skills, effort, and improvement trends — not just a one-day snapshot.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>🚀 Goal</h4>
+                        <p><strong>Prototype an app that:</strong></p>
+                        <ul>
+                            <li>Lets students upload/record their learning journey (projects, coding logs, certifications, participation).</li>
+                            <li>Uses AI to analyze progress, consistency, and skills.</li>
+                            <li>Generates a Placement Readiness Score based on growth + current abilities.</li>
+                            <li>Provides recruiters with honest insights into a student's journey.</li>
+                        </ul>
+                    </div>
+
+                <div class="tech-stack">
+                    <h4>💻 Suggested Tech Stack</h4>
+                    <div class="tags">
+                        <span class="tag">Python / Node.js</span>
+                        <span class="tag">ML / AI Models</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">D3.js / Recharts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problem 3: Elderly Care Assistant -->
+        <div class="problem-card" data-problem="3">
+            <div class="card-glow"></div>
+            <div class="card-shine"></div>
+            <div class="problem-number">03</div>
+            <div class="problem-content">
+                <div class="problem-header">
+                    <div class="problem-icon">❤️</div>
+                    <div class="problem-title-wrapper">
+                        <h3>Elderly Care Assistant</h3>
+                        <div class="difficulty-container">
+                            <span class="difficulty medium">
+                                <span class="difficulty-icon">⭐⭐</span>
+                                Intermediate
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="tagline">Stress Detection & Companionship</p>
+                    <div class="section">
+                        <h4>📋 Background</h4>
+                        <p>Older adults often face challenges like forgetting medicines, missing appointments, or feeling lonely. Many spend long hours alone, interacting mainly through phones. The way they speak or share about their day often reflects hidden stress — but it usually goes unnoticed.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>🎯 Mission</h4>
+                        <p>Build an AI companion that goes beyond reminders. It should engage seniors in small conversations, analyze their tone and words for stress, and provide timely care or suggestions.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>💡 Vision</h4>
+                        <p><strong>An elderly care assistant that doesn't just remind, but also cares.</strong></p>
+                        <p><strong>Imagine a companion that:</strong></p>
+                        <ul>
+                            <li>Gently reminds them of medicines, appointments, or daily routines.</li>
+                            <li>Listens when they talk, detecting loneliness, sadness, or stress.</li>
+                            <li>Offers calming responses, uplifting content, or connects them to family/caregivers when stress is detected.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h4>🚀 Goal</h4>
+                        <p><strong>Prototype an app that:</strong></p>
+                        <ul>
+                            <li>Provides reminders for medicines & schedules.</li>
+                            <li>Engages in small talk (friendly, simple conversations).</li>
+                            <li>Analyzes mood/stress from speech or text patterns.</li>
+                            <li>Suggests personalized solutions (play music, share a positive story, alert a caregiver, etc.).</li>
+                        </ul>
+                    </div>
+
+                <div class="tech-stack">
+                    <h4>💻 Suggested Tech Stack</h4>
+                    <div class="tags">
+                        <span class="tag">React Native / Flutter</span>
+                        <span class="tag">NLP / Sentiment Analysis</span>
+                        <span class="tag">Speech Recognition</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problem 4: AI Call Intelligence -->
+        <div class="problem-card" data-problem="4">
+            <div class="card-glow"></div>
+            <div class="card-shine"></div>
+            <div class="problem-number">04</div>
+            <div class="problem-content">
+                <div class="problem-header">
+                    <div class="problem-icon">🤖</div>
+                    <div class="problem-title-wrapper">
+                        <h3>AI Call Intelligence</h3>
+                        <div class="difficulty-container">
+                            <span class="difficulty hard">
+                                <span class="difficulty-icon">⭐⭐⭐</span>
+                                Advanced
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="tagline">Smarter Partner Conversations</p>
+                    <div class="section">
+                        <h4>📋 Background</h4>
+                        <p>Important conversations are full of details, decisions, and action items. Whether it's a client call, a team meeting, or a critical family discussion, most of this valuable information is lost the moment the conversation ends. Relying on memory is faulty, and manually taking notes is distracting and incomplete, leading to misunderstandings and missed follow-ups.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>🎯 Mission</h4>
+                        <p>To build an intelligent tool that automatically processes spoken conversations and transforms them into structured, actionable summaries. The system should serve as a perfect "memory," capturing key details so users can focus on the conversation, not the note-taking.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>💡 Vision</h4>
+                        <p>A future where no critical detail from a conversation is ever lost. A world where interactions are more productive and relationships are stronger because the focus is on understanding, not just remembering. Every conversation, professional or personal, becomes a clear record of agreements and insights.</p>
+                    </div>
+
+                    <div class="section">
+                        <h4>🚀 Goal</h4>
+                        <p><strong>Prototype an app that:</strong></p>
+                        <ul>
+                            <li>Lets users upload an audio recording of any conversation (client call, team meeting, personal chat).</li>
+                            <li>Uses AI to automatically transcribe the entire dialogue.</li>
+                            <li>Generates a concise, bullet-point summary of the key discussion points and decisions.</li>
+                            <li>Extracts a clear list of action items, tasks, and deadlines mentioned during the call.</li>
+                            <li>Provides insights into the conversation's dynamics, such as sentiment or talk-to-listen ratio.</li>
+                        </ul>
+                    </div>
+
+                <div class="tech-stack">
+                    <h4>💻 Suggested Tech Stack</h4>
+                    <div class="tags">
+                        <span class="tag">Python / Node.js</span>
+                        <span class="tag">Whisper / Google Speech API</span>
+                        <span class="tag">GPT-4 / Claude</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Ready to Build?</h3>
+            <p>Choose your problem statement and start coding!</p>
+            <p class="date">📅 October 2, 2025 | ⏰ 12 Hours to Transform Ideas into Reality</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
