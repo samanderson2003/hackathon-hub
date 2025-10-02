@@ -518,9 +518,9 @@ body {
 
 /* Problems Container */
 .problems-container {
-    max-width: 1400px;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 6rem 2rem;
+    padding: 6rem 4rem;
     background: linear-gradient(180deg, var(--dark) 0%, #0f0a1e 50%, var(--dark) 100%);
     position: relative;
     z-index: 1;
@@ -626,6 +626,10 @@ body {
     margin-bottom: 5rem;
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-badge {
@@ -682,6 +686,10 @@ body {
     margin: 0 auto;
     border-radius: 2px;
     animation: fadeInUp 0.6s ease-out 0.4s both, glow 2s infinite;
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
 }
 
 @keyframes glow {
@@ -901,14 +909,122 @@ body {
 }
 
 .problem-icon {
-    font-size: 4rem;
-    line-height: 1;
-    filter: drop-shadow(0 0 20px rgba(99, 102, 241, 0.5));
-    transition: transform 0.3s ease;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.15));
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.problem-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s;
+}
+
+.problem-icon i {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.5));
+    z-index: 1;
+    transition: all 0.3s ease;
 }
 
 .problem-card:hover .problem-icon {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.05) rotate(-5deg);
+    border-color: rgba(99, 102, 241, 0.6);
+    box-shadow: 0 10px 40px rgba(99, 102, 241, 0.3);
+}
+
+.problem-card:hover .problem-icon::before {
+    left: 100%;
+}
+
+.problem-card:hover .problem-icon i {
+    transform: scale(1.1);
+}
+
+/* Different colors for each problem card icon */
+.problem-card[data-problem="1"] .problem-icon {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.problem-card[data-problem="1"] .problem-icon i {
+    background: linear-gradient(135deg, #10b981, #6ee7b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.problem-card[data-problem="1"]:hover .problem-icon {
+    border-color: rgba(16, 185, 129, 0.6);
+    box-shadow: 0 10px 40px rgba(16, 185, 129, 0.3);
+}
+
+.problem-card[data-problem="2"] .problem-icon {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.05));
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.problem-card[data-problem="2"] .problem-icon i {
+    background: linear-gradient(135deg, #3b82f6, #93c5fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.problem-card[data-problem="2"]:hover .problem-icon {
+    border-color: rgba(59, 130, 246, 0.6);
+    box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
+}
+
+.problem-card[data-problem="3"] .problem-icon {
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(236, 72, 153, 0.05));
+    border-color: rgba(236, 72, 153, 0.3);
+}
+
+.problem-card[data-problem="3"] .problem-icon i {
+    background: linear-gradient(135deg, #ec4899, #f9a8d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.problem-card[data-problem="3"]:hover .problem-icon {
+    border-color: rgba(236, 72, 153, 0.6);
+    box-shadow: 0 10px 40px rgba(236, 72, 153, 0.3);
+}
+
+.problem-card[data-problem="4"] .problem-icon {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05));
+    border-color: rgba(245, 158, 11, 0.3);
+}
+
+.problem-card[data-problem="4"] .problem-icon i {
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.problem-card[data-problem="4"]:hover .problem-icon {
+    border-color: rgba(245, 158, 11, 0.6);
+    box-shadow: 0 10px 40px rgba(245, 158, 11, 0.3);
 }
 
 .problem-title-wrapper {
@@ -944,7 +1060,38 @@ body {
 }
 
 .difficulty-icon {
-    font-size: 1rem;
+    font-size: 0.85rem;
+    display: flex;
+    gap: 0.2rem;
+}
+
+.difficulty-icon i {
+    transition: transform 0.3s ease;
+}
+
+.difficulty:hover .difficulty-icon i {
+    transform: scale(1.2);
+}
+
+.difficulty:hover .difficulty-icon i:nth-child(1) {
+    animation: starPulse 0.6s ease-in-out;
+}
+
+.difficulty:hover .difficulty-icon i:nth-child(2) {
+    animation: starPulse 0.6s ease-in-out 0.1s;
+}
+
+.difficulty:hover .difficulty-icon i:nth-child(3) {
+    animation: starPulse 0.6s ease-in-out 0.2s;
+}
+
+@keyframes starPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
 }
 
 .difficulty.easy {
@@ -1162,6 +1309,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .problems-container {
+        padding: 4rem 1.5rem;
+    }
+    
     .timer {
         gap: 0.5rem;
         flex-wrap: wrap;
